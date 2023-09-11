@@ -1,0 +1,62 @@
+@use "../../scss/abstracts" as a;
+@use "../../scss/base" as b;
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+
+  h1 {
+    font-size: b.$font-size-large-2;
+    text-transform: uppercase;
+    & a:link,
+    & a:visited {
+      color: a.$text-color;
+    }
+  }
+
+  //  SOC ICON LINKS
+  &__socials {
+    display: flex;
+    align-items: center;
+    width: 20rem;
+
+    &__icon {
+      display: none;
+    }
+
+    & ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  // MAVIGATUION LINKS
+  &__links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      font-size: b.$font-size-mid;
+      text-transform: uppercase;
+    }
+  }
+
+  // THEME CHANGE
+  &__theme {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20rem;
+  }
+}
+
+.icon {
+  display: none !important;
+}
