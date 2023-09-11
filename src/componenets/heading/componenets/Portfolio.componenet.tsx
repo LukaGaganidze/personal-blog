@@ -1,11 +1,13 @@
-const Portfolio = (className: string | undefined) => {
+import classes from "./Icons.module.scss";
+
+const Portfolio = () => {
   return (
     <img
       width="50"
       height="50"
       src="https://img.icons8.com/ios/50/web.png"
       alt="web"
-      className={className}
+      className={classes["heading-icon"]}
     />
   );
 };
