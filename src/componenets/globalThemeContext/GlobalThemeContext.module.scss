@@ -1,0 +1,51 @@
+@use "../../scss/abstracts" as a;
+@use "../../scss/base" as b;
+
+.light-theme {
+  background-color: a.$background-color;
+  color: a.$text-color;
+
+  & span {
+    background-color: a.$text-color;
+  }
+
+  & span,
+  & a,
+  & a:link,
+  & a:visited {
+    color: a.$text-color;
+    transition: all 0.4s;
+  }
+  & a:hover,
+  & a:active {
+    color: a.$text-color-shade;
+  }
+
+  svg {
+    fill: a.$text-color;
+  }
+}
+.dark-theme {
+  background-color: a.$text-color;
+  color: a.$background-color;
+
+  & span {
+    background-color: a.$background-color;
+  }
+
+  a,
+  & a:link,
+  & a:visited {
+    color: a.$background-color;
+    transition: all 0.4s;
+  }
+
+  & a:hover,
+  & a:active {
+    color: a.$background-color-shade;
+  }
+
+  svg {
+    fill: a.$background-color;
+  }
+}

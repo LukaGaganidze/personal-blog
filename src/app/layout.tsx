@@ -1,8 +1,11 @@
+"use client";
 import "./globals.css";
 
 import Heading from "@/componenets/heading/Heading";
 
+import GlobalThemeContext from "../componenets/globalThemeContext/GlobalThemeContext";
 import type { Metadata } from "next";
+import { ThemeContextProvider } from "../context/Conext";
 
 // FONT FOR MOST TEXT
 import { Cormorant } from "next/font/google";
@@ -19,10 +22,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Heading />
-        {children}
-      </body>
+      <ThemeContextProvider>
+        <body className={inter.className}>
+          <GlobalThemeContext>
+            <Heading />
+            {children}
+          </GlobalThemeContext>
+        </body>
+      </ThemeContextProvider>
     </html>
   );
 }

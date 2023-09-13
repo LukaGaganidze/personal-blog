@@ -1,9 +1,59 @@
-import classes from "./page.module.scss";
+"use client";
+
+import { useContext } from "react";
+import themeComtext from "../context/Conext";
 
 export default function Home() {
   return (
-    <main className={classes["oscar"]}>
-      <p>this is test </p>
-    </main>
+    <div>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+      <h1>tets</h1>
+    </div>
   );
 }

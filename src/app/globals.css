@@ -7,7 +7,6 @@ const inter = playfair({ subsets: ["latin"], weight: ["400", "700", "900"] }); *
 *:hover,
 *:active {
   text-decoration: none;
-  color: #2c2b29;
 }
 
 *,
@@ -32,9 +31,4 @@ p {
 
 html {
   font-size: 62.5%;
-}
-
-body {
-  background-color: #f3efe3;
-  color: #2c2b29;
 }
