@@ -1,15 +1,16 @@
-"use client";
+import { ThemeContextProvider } from "@/context/theme-context";
+import GlobalThemeContext from "../componenets/globalThemeContext/GlobalThemeContext";
+
 import "./globals.css";
 
 import Heading from "@/componenets/heading/Heading";
 
-import GlobalThemeContext from "../componenets/globalThemeContext/GlobalThemeContext";
 import type { Metadata } from "next";
 
-import { ThemeContextProvider } from "@/context/theme-context";
 // FONT FOR MOST TEXT
 import { Cormorant } from "next/font/google";
-const inter = Cormorant({ subsets: ["latin"] });
+const cormorant = Cormorant({ subsets: ["latin"] });
+
 export const metadata: Metadata = {
   title: "Luka's Newsletter",
   description: "Personal Blog / Newspapaer",
@@ -23,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeContextProvider>
-        <body className={inter.className}>
+        <body className={cormorant.className}>
           <GlobalThemeContext>
             <Heading />
             {children}

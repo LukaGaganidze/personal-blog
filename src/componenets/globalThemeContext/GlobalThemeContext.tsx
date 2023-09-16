@@ -1,3 +1,5 @@
+"use client";
+
 import themeClasses from "./GlobalThemeContext.module.scss";
 
 import { useContext } from "react";

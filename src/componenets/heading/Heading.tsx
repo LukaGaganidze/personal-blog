@@ -1,3 +1,5 @@
+"use client";
+
 import classes from "./Heading.module.scss";
 
 import Link from "next/link";
@@ -19,7 +21,12 @@ const Heading = () => {
   const { toDarkMode } = useContext(ThemeContext);
   const { toLightMode } = useContext(ThemeContext);
 
-  // #fff SORTING LOGIC
+  // const { theme } = useContext(ThemeContext);
+
+  // const { toDarkMode } = useContext(ThemeContext);
+  // const { toLightMode } = useContext(ThemeContext);
+
+  // #fff SORTING
   // const dateArray = [
   //   { name: "luka-third", date: new Date("2023-09-3") },
   //   { name: "luka-first", date: new Date("2023-09-1") },
