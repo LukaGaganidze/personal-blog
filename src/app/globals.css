@@ -1,6 +1,9 @@
 /* FOR HEADINGS */
-/* import { Playfair_Display_SC as playfair } from "next/font/google";
-const inter = playfair({ subsets: ["latin"], weight: ["400", "700", "900"] }); */
+/* import { Playfair_Display as playfair } from "next/font/google";
+const headerFont = playfair({
+  subsets: ["latin"],
+  weight: ["400", "700", "900"],
+});*/
 
 *:link,
 *:visited,
@@ -16,6 +19,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  letter-spacing: 2px;
 }
 
 h1,

@@ -1,0 +1,59 @@
+@use ".././../../scss/abstracts" as a;
+@use ".././../../scss/base" as b;
+
+.hero-sec {
+  max-width: b.$section-sontainer-width;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: b.$margin-large 0;
+  column-gap: 3rem;
+
+  align-items: center;
+}
+
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 3rem;
+
+  & a:nth-child(2) {
+    transform: translateY(-1.4px);
+  }
+  & a:nth-child(4) {
+    transform: translateY(-1px);
+  }
+}
+
+.hero-image {
+  width: auto;
+  height: 25rem;
+  filter: brightness(70%) grayscale(100%);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.text-container {
+  padding: 2rem 0;
+  text-align: center;
+
+  & p:last-child {
+    font-size: b.$font-size-p;
+  }
+}
+
+.heading {
+  margin-bottom: 1.5rem;
+  font-size: b.$font-size-heading;
+  color: a.$heading-color;
+  &__sub {
+    margin-bottom: 0.5rem;
+    font-size: b.$font-size-sub-heading;
+    color: a.$input-placeholder;
+  }
+}
+
+.active {
+  filter: brightness(100%) grayscale(0%);
+}

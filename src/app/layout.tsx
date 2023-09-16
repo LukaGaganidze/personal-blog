@@ -5,7 +5,7 @@ import Heading from "@/componenets/heading/Heading";
 
 import GlobalThemeContext from "../componenets/globalThemeContext/GlobalThemeContext";
 import type { Metadata } from "next";
-import { ThemeContextProvider } from "../context/Conext";
+import { ThemeContextProvider } from "../context/theme-context";
 
 // FONT FOR MOST TEXT
 import { Cormorant } from "next/font/google";

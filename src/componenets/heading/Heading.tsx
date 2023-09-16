@@ -10,12 +10,27 @@ const headerFont = playfair({
 // ICONS
 
 import { useContext } from "react";
-import ThemeContext from "@/context/Conext";
+import ThemeContext from "@/context/theme-context";
+
+import { BottomBorder } from "../bottomBorder/BottomBorder";
 
 const Heading = () => {
   const { theme } = useContext(ThemeContext);
   const { toDarkMode } = useContext(ThemeContext);
   const { toLightMode } = useContext(ThemeContext);
+
+  // #fff SORTING LOGIC
+  // const dateArray = [
+  //   { name: "luka-third", date: new Date("2023-09-3") },
+  //   { name: "luka-first", date: new Date("2023-09-1") },
+  //   { name: "luka-second", date: new Date("2023-09-2") },
+  //   { name: "luka-didth", date: new Date("2023-09-5") },
+  //   { name: "luka-forth", date: new Date("2023-09-4") },
+  // ];
+
+  // dateArray.sort((a: any, b: any) => b.date.getTime() - a.date.getTime());
+
+  // console.log(dateArray);
 
   return (
     <div className={`${classes["heading"]} ${headerFont.className}`}>
@@ -23,7 +38,10 @@ const Heading = () => {
       <div className={classes["heading__socials"]}>
         <ul>
           <li>
-            <Link target="_blank" href="https://www.buymeacoffee.com/dashboard">
+            <Link
+              target="_blank"
+              href="https://www.buymeacoffee.com/LukaWebDev"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
@@ -82,23 +100,23 @@ const Heading = () => {
       {/* NAVIGATION LINKS */}
       <div className={classes["heading__links"]}>
         <h1 className={`${classes["main-home-link"]}`}>
-          <Link href="#">Coffee Dirven Coder</Link>
+          <Link href="/">Coffee Dirven Coder</Link>
         </h1>
         <ul>
           <li>
-            <Link href="#">Latest</Link>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="#">Coding</Link>
+            <Link href="/coding">Coding</Link>
           </li>
           <li>
             <Link href="#">Sport</Link>
           </li>
           <li>
-            <Link href="#">Interests</Link>
+            <Link href="#">Coffee</Link>
           </li>
           <li>
-            <Link href="#">About</Link>
+            <Link href="/about">About</Link>
           </li>
         </ul>
       </div>
@@ -126,7 +144,6 @@ const Heading = () => {
           </div>
 
           {/* night */}
-
           <div
             onClick={toDarkMode}
             className={`${classes["heading__theme__icons-box"]} ${
@@ -147,7 +164,7 @@ const Heading = () => {
         </div>
       </div>
 
-      <span className={classes["bottom-border"]}></span>
+      <BottomBorder />
     </div>
   );
 };

@@ -5,8 +5,22 @@
   background-color: a.$background-color;
   color: a.$text-color;
 
+  & h3 {
+    color: a.$heading-color;
+  }
+
   & span {
     background-color: a.$text-color;
+  }
+
+  & h1 {
+    & a,
+    & a:link,
+    & a:visited,
+    & a:hover,
+    & a:active {
+      color: a.$text-color;
+    }
   }
 
   & span,
@@ -21,13 +35,31 @@
     color: a.$text-color-shade;
   }
 
-  svg {
+  & svg {
     fill: a.$text-color;
+    transition: all 0.4s;
+  }
+  & svg:hover {
+    fill: a.$text-color-shade;
   }
 }
 .dark-theme {
   background-color: a.$text-color;
   color: a.$background-color;
+
+  & h3 {
+    color: a.$heading-color-black-theme;
+  }
+
+  & h1 {
+    & a,
+    & a:link,
+    & a:visited,
+    & a:hover,
+    & a:active {
+      color: a.$background-color;
+    }
+  }
 
   & span {
     background-color: a.$background-color;
@@ -45,7 +77,23 @@
     color: a.$background-color-shade;
   }
 
-  svg {
+  & svg {
     fill: a.$background-color;
+    transition: all 0.4s;
+  }
+  & svg:hover {
+    fill: a.$background-color-shade;
+  }
+
+  & a,
+  & a:link,
+  & a:visited {
+    color: a.$background-color;
+    transition: all 0.4s;
+  }
+
+  & a:hover,
+  & a:active {
+    color: a.$background-color-shade;
   }
 }

@@ -1,0 +1,26 @@
+@use "../../scss/abstracts" as a;
+@use "../../scss/base" as b;
+
+.about-page {
+  width: b.$container-large;
+  margin: 0 auto;
+  padding: b.$margin-mid-3 0;
+
+  &__heading {
+    font-size: b.$font-size-large;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: b.$margin-mid;
+    letter-spacing: 2px;
+  }
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: b.$margin-small-3;
+  font-size: b.$font-size-mid;
+
+  & p {
+    letter-spacing: 2px;
+  }
+}
