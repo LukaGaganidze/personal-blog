@@ -21,24 +21,6 @@ const Heading = () => {
   const { toDarkMode } = useContext(ThemeContext);
   const { toLightMode } = useContext(ThemeContext);
 
-  // const { theme } = useContext(ThemeContext);
-
-  // const { toDarkMode } = useContext(ThemeContext);
-  // const { toLightMode } = useContext(ThemeContext);
-
-  // #fff SORTING
-  // const dateArray = [
-  //   { name: "luka-third", date: new Date("2023-09-3") },
-  //   { name: "luka-first", date: new Date("2023-09-1") },
-  //   { name: "luka-second", date: new Date("2023-09-2") },
-  //   { name: "luka-didth", date: new Date("2023-09-5") },
-  //   { name: "luka-forth", date: new Date("2023-09-4") },
-  // ];
-
-  // dateArray.sort((a: any, b: any) => b.date.getTime() - a.date.getTime());
-
-  // console.log(dateArray);
-
   return (
     <div className={`${classes["heading"]} ${headerFont.className}`}>
       {/* ICON LINKS */}
@@ -177,3 +159,21 @@ const Heading = () => {
 };
 
 export default Heading;
+
+// const { theme } = useContext(ThemeContext);
+
+// const { toDarkMode } = useContext(ThemeContext);
+// const { toLightMode } = useContext(ThemeContext);
+
+// #fff SORTING
+// const dateArray = [
+//   { name: "luka-third", date: new Date("2023-09-3") },
+//   { name: "luka-first", date: new Date("2023-09-1") },
+//   { name: "luka-second", date: new Date("2023-09-2") },
+//   { name: "luka-didth", date: new Date("2023-09-5") },
+//   { name: "luka-forth", date: new Date("2023-09-4") },
+// ];
+
+// dateArray.sort((a: any, b: any) => b.date.getTime() - a.date.getTime());
+
+// console.log(dateArray);
