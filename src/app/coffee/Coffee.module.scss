@@ -1,0 +1,10 @@
+@use "../../scss/abstracts" as a;
+@use "../../scss/base" as b;
+
+.coffee-main {
+  margin: 0 auto;
+  max-width: b.$section-sontainer-width;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+}

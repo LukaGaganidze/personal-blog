@@ -103,7 +103,7 @@ const Heading = () => {
             <Link href="/fencing">Fencing</Link>
           </li>
           <li>
-            <Link href="#">Coffee</Link>
+            <Link href="/coffee">Coffee</Link>
           </li>
           <li>
             <Link href="/about">About</Link>
