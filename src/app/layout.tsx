@@ -4,6 +4,7 @@ import GlobalThemeContext from "../componenets/globalThemeContext/GlobalThemeCon
 import "./globals.css";
 
 import Heading from "@/componenets/heading/Heading";
+import Footer from "@/componenets/footer/Footer";
 
 import type { Metadata } from "next";
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           <GlobalThemeContext>
             <Heading />
             {children}
+            <Footer />
           </GlobalThemeContext>
         </body>
       </ThemeContextProvider>

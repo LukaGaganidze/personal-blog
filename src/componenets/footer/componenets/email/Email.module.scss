@@ -1,0 +1,39 @@
+@use "../../../../scss/abstracts" as a;
+@use "../../../../scss/base" as b;
+
+.main-container {
+  width: b.$container-large;
+  margin: 0 auto;
+  text-align: center;
+
+  padding: 3rem 0;
+}
+
+.envelope-container {
+  border: solid black 1px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: max-content;
+  padding: 1rem 2rem;
+  font-size: b.$font-size-mid;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+
+.envelope-container-black-theme {
+  border: solid a.$background-color 1px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: max-content;
+  padding: 1rem 2rem;
+  font-size: b.$font-size-mid;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+
+.main-text {
+  font-size: b.$font-size-heading;
+  margin-bottom: 1rem;
+}

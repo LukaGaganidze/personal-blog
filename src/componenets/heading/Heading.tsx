@@ -91,6 +91,7 @@ const Heading = () => {
         <h1 className={`${classes["main-home-link"]}`}>
           <Link href="/">Coffee Dirven Coder</Link>
         </h1>
+
         <ul>
           <li>
             <Link href="/">Home</Link>
@@ -99,7 +100,7 @@ const Heading = () => {
             <Link href="/coding">Coding</Link>
           </li>
           <li>
-            <Link href="#">Sport</Link>
+            <Link href="/fencing">Fencing</Link>
           </li>
           <li>
             <Link href="#">Coffee</Link>

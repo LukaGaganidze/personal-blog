@@ -1,0 +1,15 @@
+@use "../../../scss/abstracts" as a;
+@use "../../../scss/base" as b;
+
+.fencing-sec {
+  margin: 0 auto;
+  max-width: b.$section-sontainer-width;
+  padding: b.$margin-large 0;
+
+  & h3 {
+    font-size: b.$sec-heading;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin-bottom: b.$margin-mid-2;
+  }
+}

@@ -4,6 +4,8 @@ import { Playfair_Display as playfair } from "next/font/google";
 
 import Image from "next/image";
 
+import { BottomBorder } from "@/componenets/bottomBorder/BottomBorder";
+
 // images
 // import fencing from "../../../assets/home/hero/fencing.png";
 // import paragliding from "../../../assets/home/hero/paragliding.png";
@@ -17,6 +19,7 @@ import portfolio from "../../../assets/home/hero/leps-v2/personal-lep.png";
 
 import { useState } from "react";
 import Link from "next/link";
+
 const headerFont = playfair({
   subsets: ["latin"],
   weight: ["400", "700", "900"],
@@ -105,6 +108,8 @@ const Hero = () => {
           <strong>Angular</strong> .
         </p>
       </div>
+
+      <BottomBorder />
     </section>
   );
 };

@@ -1,0 +1,29 @@
+@use "../../../../../scss/abstracts" as a;
+@use "../../../../../scss/base" as b;
+
+.intro {
+  width: b.$container-large;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  column-gap: 10rem;
+  align-items: center;
+
+  & img {
+    filter: grayscale(80%);
+    width: 100%;
+    height: auto;
+    border-radius: 0.3rem;
+  }
+
+  &__text {
+    & h3 {
+      font-size: b.$font-size-heading !important;
+      margin-bottom: 2rem;
+    }
+
+    & p {
+      font-size: b.$font-size-p;
+    }
+  }
+}

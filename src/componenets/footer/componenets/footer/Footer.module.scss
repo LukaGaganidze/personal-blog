@@ -1,0 +1,35 @@
+@use "../../../../scss/abstracts" as a;
+@use "../../../../scss/base" as b;
+
+.container {
+  padding: 3rem 2rem;
+  padding-bottom: 7rem;
+}
+
+.main-link {
+  text-align: center;
+  font-size: b.$font-size-large-2;
+  text-transform: uppercase;
+
+  & a:link,
+  & a:visited {
+    font-weight: 100;
+  }
+}
+
+.link-box {
+  display: flex;
+  justify-content: space-between;
+
+  & ul {
+    list-style: none;
+
+    & li {
+      margin-bottom: 0.8rem;
+      & a {
+        font-size: b.$font-size-sub-heading;
+        text-decoration: underline;
+      }
+    }
+  }
+}

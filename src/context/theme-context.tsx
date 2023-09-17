@@ -1,5 +1,4 @@
 "use client";
-
 import { createContext, useState, useEffect, ReactNode } from "react";
 
 const ThemeContext = createContext({
@@ -16,10 +15,11 @@ export const ThemeContextProvider = ({
   const [theme, setTheme] = useState("light");
 
   function toDarkMode() {
-    setTheme("dark");
+    setTheme(() => "dark");
   }
+
   function toLightMode() {
-    setTheme("light");
+    setTheme(() => "light");
   }
 
   return (
