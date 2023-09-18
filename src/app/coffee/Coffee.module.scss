@@ -1,10 +1,53 @@
 @use "../../scss/abstracts" as a;
 @use "../../scss/base" as b;
 
-.coffee-main {
+.container {
   margin: 0 auto;
   max-width: b.$section-sontainer-width;
+}
+
+.coffee-main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 5rem;
 }
+
+.main-heading-box {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+  padding: b.$margin-mid-1 0 b.$margin-large 0;
+
+  & h3 {
+    font-size: b.$sec-heading-smaller;
+    text-transform: uppercase;
+  }
+
+  & svg {
+    width: 1.8rem;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.svg-box {
+  display: flex;
+  align-items: center;
+
+  & p {
+    font-size: b.$font-size-p;
+  }
+}
+
+.desctiption {
+  font-size: b.$font-size-p;
+}
+
+// If you've found your way here, it's clear that you share my love for coffee. I've always been a coffee enthusiast, and one day while surfing the web, I stumbled upon a fascinating website dedicated to the world of coffee. It got me thinking, "I drink so much coffee every day; I could definitely recall some remarkable tastes and experiences. Why not bring these coffee journeys to life through code?" And so, the idea for this website was born.
+
+// Now, you might be wondering why I'm sharing this backstory with you. Well, it's simple. Here at Coffee-Driven-Coder, I want to take you on a flavorful journey through the best coffees I've ever tasted. I'll describe the coffee itself, the places I've enjoyed it, and pretty much everything that crosses my coffee-fueled mind. After all, you're visiting a site called Coffee-Driven-Coder – why not indulge in a little caffeine-infused storytelling?
+
+// So, whether you're a fellow coffee aficionado or just someone looking to explore the world of coffee, I invite you to join me on this delightful adventure. Get ready to savor the rich aromas, distinct flavors, and unique experiences that come with each cup. Sit back, relax, and enjoy your stay at Coffee-Driven-Coder!
