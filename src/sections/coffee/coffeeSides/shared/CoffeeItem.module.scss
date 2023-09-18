@@ -1,0 +1,40 @@
+@use "../../../../scss/abstracts" as a;
+@use "../../../../scss/base" as b;
+
+.coffe-item {
+  margin-bottom: b.$margin-large-3;
+  padding: 0 3rem;
+  transform: translateY(1rem);
+  opacity: 0;
+  transition: all 0.4s ease;
+
+  &__link {
+    border-radius: 0.5rem;
+    overflow: hidden !important;
+    display: block;
+    margin-bottom: b.$margin-small-1;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.05);
+  }
+
+  &__text {
+    &__date {
+      font-size: b.$font-size-sub-heading;
+    }
+    & h3 {
+      font-size: b.$font-size-heading;
+      margin-bottom: b.$margin-small-1;
+    }
+    &__title {
+      font-size: b.$font-size-mid;
+    }
+  }
+}
+
+.fade-in {
+  transform: translateY(0);
+  opacity: 1;
+}
