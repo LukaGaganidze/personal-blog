@@ -6,8 +6,8 @@ import Fencing from "@/sections/home/fencing/Fencing";
 export default function Home() {
   return (
     <div>
-      <Hero />
-      <Fencing />
+      {/* <Hero /> */}
+      {/* <Fencing /> */}
     </div>
   );
 }

@@ -1,0 +1,55 @@
+// THEME CHANGE
+.theme {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20rem;
+
+  &__container {
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__icons-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+
+    & svg {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    &__dark {
+      transform: translateY(-100%);
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .theme {
+    width: 15rem;
+
+    &__container {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    &__icons-box {
+      & svg {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+}
+@media (max-width: 650px) {
+  .theme {
+    width: 2rem;
+  }
+}

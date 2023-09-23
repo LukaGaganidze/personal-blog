@@ -1,11 +1,9 @@
-import GlobalThemeContext from "../componenets/globalThemeContext/GlobalThemeContext";
-import { ThemeContextProvider } from "@/context/theme-context";
-import { CoffeeCTXProvider } from "@/context/coffee-context";
-import { ProjectsCTXProvider } from "@/context/coding-projects-context";
 import "./globals.css";
+import CTX from "@/context/CTX";
 
 import Heading from "@/componenets/heading/Heading";
 import Footer from "@/componenets/footer/Footer";
+import MobileNav from "@/componenets/heading/componenets/MobileNav";
 
 import type { Metadata } from "next";
 
@@ -25,19 +23,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <ThemeContextProvider>
-        <body className={cormorant.className}>
-          <GlobalThemeContext>
-            <CoffeeCTXProvider>
-              <ProjectsCTXProvider>
-                <Heading />
-                {children}
-                <Footer />
-              </ProjectsCTXProvider>
-            </CoffeeCTXProvider>
-          </GlobalThemeContext>
-        </body>
-      </ThemeContextProvider>
+      <body className={cormorant.className}>
+        <CTX>
+          <MobileNav />
+          <Heading />
+          {children}
+          {/* <Footer /> */}
+        </CTX>
+      </body>
     </html>
   );
 }

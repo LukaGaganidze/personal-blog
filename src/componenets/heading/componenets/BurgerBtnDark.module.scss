@@ -1,0 +1,114 @@
+@use "../../../scss/abstracts" as a;
+@use "../../../scss/base" as b;
+
+$dark: a.$background-color;
+$light: a.$text-color;
+
+@mixin btn($left, $top) {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: $top;
+  left: $left;
+  transform: translateX(5px) translateY(-10px) scale(0.8);
+  transition-duration: 0.5s;
+}
+
+@mixin icon($height, $width) {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: $height;
+  width: $width;
+  top: 30px;
+  background-color: $dark;
+}
+
+@mixin icon-before($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $dark;
+  content: "";
+  top: $top;
+}
+
+@mixin icon-after($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $dark;
+  content: "";
+  top: $top;
+}
+.container {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn11 {
+  @include btn(0, 0);
+
+  .icon-left {
+    @include icon(4px, 15px);
+
+    &:before {
+      @include icon-before(4px, 15px, -10px);
+    }
+
+    &:after {
+      @include icon-after(4px, 15px, 10px);
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .icon-right {
+    @include icon(4px, 15px);
+    left: 15px;
+
+    &:before {
+      @include icon-before(4px, 15px, -10px);
+    }
+
+    &:after {
+      @include icon-after(4px, 15px, 10px);
+    }
+  }
+
+  &.open {
+    .icon-left {
+      transition-duration: 0.5s;
+      background: transparent;
+
+      &:before {
+        transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+      }
+
+      &:after {
+        transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+      }
+    }
+
+    .icon-right {
+      transition-duration: 0.5s;
+      background: transparent;
+
+      &:before {
+        transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+      }
+
+      &:after {
+        transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
