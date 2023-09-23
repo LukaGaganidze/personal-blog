@@ -91,9 +91,51 @@
   }
 }
 
-// .main-home-link:hover,
-// .main-home-link:active {
-//   & a {
-//     color: a.$text-color !important;
-//   }
-// }
+.coding-li {
+  position: relative;
+  cursor: default;
+  transition: all 0.4s;
+}
+
+.dropdown-menu {
+  background-color: #e6e3db;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5rem;
+  border-radius: 0.4rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  position: absolute;
+  left: 0;
+  top: 2.6rem;
+  display: none !important;
+  // z-index: -1;
+  transition: all 0.4s;
+
+  & a {
+    font-size: b.$font-size-small-3;
+  }
+}
+.dropdown-menu-dark {
+  background-color: #323230;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5rem;
+  border-radius: 0.4rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  position: absolute;
+  left: 0;
+  top: 2.6rem;
+  display: none !important;
+  // z-index: -1;
+  transition: all 0.4s;
+
+  & a {
+    font-size: b.$font-size-small-3;
+  }
+}
+
+.dropdown-menu-active {
+  display: block !important;
+}

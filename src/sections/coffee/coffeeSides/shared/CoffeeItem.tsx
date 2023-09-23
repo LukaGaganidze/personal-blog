@@ -1,21 +1,13 @@
 "use client";
 
+import { modifiedCoffeObj } from "@/types/coffee-types";
+
 import classes from "./CoffeeItem.module.scss";
-import { StaticImageData } from "next/image";
 
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { RefObject } from "react";
-
-type modifiedCoffeObj = {
-  link: string;
-  heading: string;
-  title: string;
-  img: StaticImageData;
-  postDate: string;
-  index: number;
-};
 
 type IntersectionObserverEntry = {
   isIntersecting: boolean;
@@ -65,7 +57,13 @@ const CoffeeItem = ({ item }: { item: modifiedCoffeObj }) => {
       }`}
     >
       <Link className={classes["coffe-item__link"]} href="">
-        <Image className={classes["coffe-item__img"]} src={item.img} alt="ss" />
+        <Image
+          className={classes["coffe-item__img"]}
+          src={item.img}
+          alt="coffee cup image"
+          loading="lazy"
+          placeholder="blur"
+        />
       </Link>
 
       <div className={classes["coffe-item__text"]}>

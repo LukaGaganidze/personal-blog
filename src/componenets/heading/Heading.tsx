@@ -11,16 +11,19 @@ const headerFont = playfair({
 
 // ICONS
 
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import ThemeContext from "@/context/theme-context";
 
 import { BottomBorder } from "../bottomBorder/BottomBorder";
 
 const Heading = () => {
+  // THEME
   const { theme } = useContext(ThemeContext);
   const { toDarkMode } = useContext(ThemeContext);
   const { toLightMode } = useContext(ThemeContext);
 
+  // DROPDOWN MENU
+  const [dropMenuState, setDropMenuState] = useState(false);
   return (
     <div className={`${classes["heading"]} ${headerFont.className}`}>
       {/* ICON LINKS */}
@@ -96,8 +99,26 @@ const Heading = () => {
           <li>
             <Link href="/">Home</Link>
           </li>
-          <li>
-            <Link href="/coding">Coding</Link>
+          <li
+            onMouseEnter={() => setDropMenuState(() => true)}
+            onMouseLeave={() => setDropMenuState(() => false)}
+            className={classes["coding-li"]}
+          >
+            <p>Coding</p>
+            <ul
+              className={`${
+                classes[
+                  theme === "light" ? "dropdown-menu" : "dropdown-menu-dark"
+                ]
+              } ${dropMenuState ? classes["dropdown-menu-active"] : ""}`}
+            >
+              <li>
+                <Link href="/coding/projects">projects</Link>
+              </li>
+              <li>
+                <Link href="/coding/articles">articles</Link>
+              </li>
+            </ul>
           </li>
           <li>
             <Link href="/fencing">Fencing</Link>

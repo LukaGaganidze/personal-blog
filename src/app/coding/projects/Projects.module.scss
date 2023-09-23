@@ -1,0 +1,7 @@
+@use "./../../../scss/abstracts" as a;
+@use "./../../../scss/base" as b;
+
+.projects {
+  margin: b.$margin-large-3 auto;
+  max-width: b.$section-sontainer-width;
+}

@@ -1,7 +1,7 @@
-import { ThemeContextProvider } from "@/context/theme-context";
 import GlobalThemeContext from "../componenets/globalThemeContext/GlobalThemeContext";
+import { ThemeContextProvider } from "@/context/theme-context";
 import { CoffeeCTXProvider } from "@/context/coffee-context";
-
+import { ProjectsCTXProvider } from "@/context/coding-projects-context";
 import "./globals.css";
 
 import Heading from "@/componenets/heading/Heading";
@@ -29,9 +29,11 @@ export default function RootLayout({
         <body className={cormorant.className}>
           <GlobalThemeContext>
             <CoffeeCTXProvider>
-              <Heading />
-              {children}
-              <Footer />
+              <ProjectsCTXProvider>
+                <Heading />
+                {children}
+                <Footer />
+              </ProjectsCTXProvider>
             </CoffeeCTXProvider>
           </GlobalThemeContext>
         </body>

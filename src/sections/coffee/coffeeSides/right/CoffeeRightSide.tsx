@@ -1,17 +1,8 @@
 import classes from "./CoffeeRightSide.module.scss";
 
-import { StaticImageData } from "next/image";
+import { modifiedCoffeObj } from "@/types/coffee-types";
 
 import CoffeeItem from "../shared/CoffeeItem";
-
-type modifiedCoffeObj = {
-  link: string;
-  heading: string;
-  title: string;
-  img: StaticImageData;
-  postDate: string;
-  index: number;
-};
 
 // Define the prop type for the coffeeContentData prop
 interface CoffeeSideProps {

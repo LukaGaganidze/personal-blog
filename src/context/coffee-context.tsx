@@ -1,8 +1,12 @@
 "use client";
 
-import { createContext, useState, ReactNode } from "react";
+import { createContext, ReactNode } from "react";
 
-import { StaticImageData } from "next/image";
+import {
+  coffeObj,
+  modifiedCoffeObj,
+  CoffeeContextType,
+} from "@/types/coffee-types";
 
 // coffee images
 import testimg1 from "../assets/coffee/experiences/test/coffee1.jpg";
@@ -11,32 +15,6 @@ import testimg3 from "../assets/coffee/experiences/test/coffee3.jpg";
 import testimg4 from "../assets/coffee/experiences/test/coffee4.jpg";
 import testimg5 from "../assets/coffee/experiences/test/coffee5.jpg";
 import testimg6 from "../assets/coffee/experiences/test/coffee6.jpg";
-
-// tyoe for initial coffee object
-type coffeObj = {
-  link: string;
-  heading: string;
-  title: string;
-  img: StaticImageData;
-  postDate: string;
-};
-
-// tyoe for modified coffee object ( added index for sorting )
-type modifiedCoffeObj = {
-  link: string;
-  heading: string;
-  title: string;
-  img: StaticImageData;
-  postDate: string;
-  index: number;
-};
-
-// Explicitly specify the type of coffeeData
-type CoffeeContextType = {
-  coffeeData: modifiedCoffeObj[];
-  sortLatest(): modifiedCoffeObj[];
-  sortEarliest(): modifiedCoffeObj[];
-};
 
 // context
 export const coffeeCtx = createContext<CoffeeContextType>({
