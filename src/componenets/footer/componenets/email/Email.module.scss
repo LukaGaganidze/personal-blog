@@ -2,7 +2,7 @@
 @use "../../../../scss/base" as b;
 
 .main-container {
-  width: b.$container-large;
+  max-width: b.$container-large;
   margin: 0 auto;
   text-align: center;
 
@@ -36,4 +36,51 @@
 .main-text {
   font-size: b.$font-size-heading;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 1150px) {
+  .main-text {
+    font-size: b.$font-size-mid;
+  }
+  .main-container {
+    padding: 2rem 1rem;
+  }
+
+  .envelope-container {
+    & p {
+      font-size: b.$font-size-small-3;
+    }
+  }
+  .envelope-container-black-theme {
+    & p {
+      font-size: b.$font-size-small-3;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .main-text {
+    font-size: b.$font-size-smal-2;
+  }
+  .main-container {
+    padding: 2rem 1rem;
+  }
+
+  .envelope-container,
+  .envelope-container:link,
+  .envelope-container:visited {
+    border-radius: 0.4rem;
+    padding: 0.5rem 1rem;
+    & p {
+      font-size: b.$font-size-small-1;
+    }
+  }
+  .envelope-container-black-theme,
+  .envelope-container-black-theme:link,
+  .envelope-container-black-theme:visited {
+    border-radius: 0.4rem;
+    padding: 1rem 2rem;
+    & p {
+      font-size: b.$font-size-small-1;
+    }
+  }
 }

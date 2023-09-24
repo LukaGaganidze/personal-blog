@@ -23,11 +23,15 @@ const Introductionary = () => {
       <div className={classes["intro__text"]}>
         <Link
           href="/fencing"
-          className={`${headerFont.className} ${classes["intro__text"]}`}
+          className={`${headerFont.className} ${classes["intro__sub"]}`}
         >
           FENCING
         </Link>
-        <h3 className={headerFont.className}>THE ART OF FENCING</h3>
+        <h3
+          className={`${headerFont.className} ${classes["heding-secondary"]}`}
+        >
+          THE ART OF FENCING
+        </h3>
         <p>
           Fencing is an incredible sport that has taught me a multitude of life
           lessons beyond just the skills required for the sport itself. It is

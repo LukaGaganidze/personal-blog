@@ -13,3 +13,23 @@
     margin-bottom: b.$margin-mid-2;
   }
 }
+
+@media (max-width: 1400px) {
+  .fencing-sec {
+    & .main-heading {
+      display: none;
+    }
+  }
+}
+@media (max-width: 1035px) {
+  .fencing-sec {
+    margin: 0 auto;
+    max-width: b.$section-sontainer-width;
+    padding: b.$margin-large b.$margin-mid;
+  }
+}
+@media (max-width: 550px) {
+  .fencing-sec {
+    padding: b.$margin-mid b.$margin-mid;
+  }
+}

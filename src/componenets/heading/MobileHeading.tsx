@@ -1,24 +1,23 @@
 import BotomBorderNonAbsolute from "../bottomBorder/BotomBorderNonAbsolute";
 import classes from "./Heading.module.scss";
 import styles from "./HeadingMobile.module.scss";
-import Link from "next/link";
+// import Link from "next/link";
 import ThemeButton from "./componenets/ThemeButton";
 import BurgerBtn from "./componenets/BurgerBtn";
+import { Playfair_Display as playfair } from "next/font/google";
+const headerFont = playfair({
+  subsets: ["latin"],
+  weight: ["400", "700", "900"],
+});
 
 const MobileHeading = () => {
   return (
     <div className={styles["container"]}>
       <div className={styles["mobile-heading"]}>
         {/* burger */}
-        {/* <div className={styles["burger"]}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div> */}
         <BurgerBtn />
-
-        {/* socials */}
-        <ul className={styles["socilas"]}>
+        {/* SOCIALS AS A HEADING MIDDLE */}
+        {/* <ul className={styles["socilas"]}>
           <li>
             <Link
               target="_blank"
@@ -76,8 +75,11 @@ const MobileHeading = () => {
               </svg>
             </Link>
           </li>
-        </ul>
-
+        </ul> */}
+        {/* SITE NAME AS A HEADING MIDDLE */}
+        <h1 className={`${headerFont.className} ${styles["main-header-h1"]}`}>
+          COFFEE DRIVEN CODER
+        </h1>
         {/* THEME CHANGE */}
         <ThemeButton />
       </div>

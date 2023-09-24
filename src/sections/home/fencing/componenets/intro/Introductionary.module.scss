@@ -2,7 +2,7 @@
 @use "../../../../../scss/base" as b;
 
 .intro {
-  width: b.$container-large;
+  max-width: b.$container-large;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -24,6 +24,59 @@
 
     & p {
       font-size: b.$font-size-p;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .intro {
+    &__sub,
+    &__sub:link,
+    &__sub:visited {
+      font-size: b.$font-size-small-3;
+    }
+    &__text {
+      & .heding-secondary {
+        font-size: b.$font-size-mid !important;
+        margin-bottom: 1rem;
+      }
+
+      & p {
+        font-size: b.$font-size-small-3;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    & img {
+      filter: grayscale(80%);
+      max-width: 50rem;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .intro {
+    &__sub,
+    &__sub:link,
+    &__sub:visited {
+      font-size: b.$font-size-small;
+    }
+    &__text {
+      & .heding-secondary {
+        font-size: b.$font-size-smal-2 !important;
+        margin-bottom: 1rem;
+      }
+
+      & p {
+        font-size: b.$font-size-small-1;
+      }
     }
   }
 }

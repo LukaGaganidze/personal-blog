@@ -12,7 +12,9 @@ import Introductionary from "./componenets/intro/Introductionary";
 const Fencing = () => {
   return (
     <section className={classes["fencing-sec"]}>
-      <h3 className={headerFont.className}>Fencing</h3>
+      <h3 className={`${headerFont.className} ${classes["main-heading"]}`}>
+        Fencing
+      </h3>
       <Introductionary />
     </section>
   );

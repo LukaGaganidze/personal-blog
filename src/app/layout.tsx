@@ -28,7 +28,7 @@ export default function RootLayout({
           <MobileNav />
           <Heading />
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </CTX>
       </body>
     </html>
