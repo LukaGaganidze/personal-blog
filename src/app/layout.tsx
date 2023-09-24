@@ -12,9 +12,15 @@ const cormorant = Cormorant({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Luka's Newsletter",
-  description: "Personal Blog / Newspapaer",
+  description: "Personal Blog / Newspaper",
   openGraph: {
-    images: ["../assets/thumbnail/thumbnail.png"],
+    images: [
+      {
+        url: "../assets/thumbnail/thumbnail.png", // Replace with the actual URL to your image
+        width: 335,
+        height: 335,
+      },
+    ],
   },
 };
 
