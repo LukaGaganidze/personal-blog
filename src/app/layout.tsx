@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "../assets/thumbnail/thumbnail.png", // Replace with the actual URL to your image
+        url: "https://i.ibb.co/7NcKtRH/image.png",
         width: 335,
         height: 335,
       },
