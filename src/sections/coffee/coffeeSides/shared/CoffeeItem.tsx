@@ -68,7 +68,7 @@ const CoffeeItem = ({ item }: { item: modifiedCoffeObj }) => {
 
       <div className={classes["coffe-item__text"]}>
         <p className={classes["coffe-item__text__date"]}>{item.postDate}</p>
-        <Link href="">
+        <Link className={classes["main-heading"]} href="">
           <h3>{item.heading}</h3>
         </Link>
 

@@ -38,12 +38,18 @@
   margin-bottom: 1rem;
 }
 
+@media (max-width: 1400px) {
+  .main-container {
+    padding: 3rem b.$margin-mid;
+  }
+}
+
 @media (max-width: 1150px) {
   .main-text {
     font-size: b.$font-size-mid;
   }
   .main-container {
-    padding: 2rem 1rem;
+    padding: 2rem b.$margin-mid;
   }
 
   .envelope-container {
@@ -62,7 +68,7 @@
     font-size: b.$font-size-smal-2;
   }
   .main-container {
-    padding: 2rem 1rem;
+    padding: 2rem b.$margin-mid;
   }
 
   .envelope-container,
@@ -78,7 +84,7 @@
   .envelope-container-black-theme:link,
   .envelope-container-black-theme:visited {
     border-radius: 0.4rem;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     & p {
       font-size: b.$font-size-small-1;
     }

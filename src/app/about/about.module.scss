@@ -2,9 +2,9 @@
 @use "../../scss/base" as b;
 
 .about-page {
-  width: b.$container-large;
+  max-width: b.$container-large;
   margin: 0 auto;
-  padding: b.$margin-mid-3 0;
+  padding: b.$margin-mid-3 b.$margin-mid;
 
   &__heading {
     font-size: b.$font-size-large;
@@ -22,5 +22,36 @@
 
   & p {
     letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .about-page {
+    padding: b.$margin-small-3 b.$margin-mid;
+
+    &__heading {
+      margin-bottom: b.$margin-small-2;
+    }
+  }
+  .about-text {
+    gap: b.$margin-small-2;
+
+    & p {
+      letter-spacing: 2px;
+    }
+  }
+  .about-page__heading {
+    font-size: b.$font-size-mid;
+  }
+  .about-text {
+    font-size: b.$font-size-small-3;
+  }
+}
+@media (max-width: 650px) {
+  .about-page__heading {
+    font-size: b.$font-size-smal-2;
+  }
+  .about-text {
+    font-size: b.$font-size-small-1;
   }
 }

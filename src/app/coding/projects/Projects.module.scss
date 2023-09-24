@@ -5,3 +5,25 @@
   margin: b.$margin-large-3 auto;
   max-width: b.$section-sontainer-width;
 }
+
+@media (max-width: 1450px) {
+  .projects {
+    padding: 0 b.$margin-mid;
+  }
+}
+@media (max-width: 1300px) {
+  .projects {
+    margin: b.$margin-large auto;
+    max-width: b.$section-sontainer-width;
+  }
+}
+@media (max-width: 800px) {
+  .projects {
+    margin: b.$margin-mid auto;
+  }
+}
+@media (max-width: 800px) {
+  .projects {
+    margin: b.$margin-small-2 auto;
+  }
+}

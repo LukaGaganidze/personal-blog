@@ -10,6 +10,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 5rem;
+  padding: 0 b.$margin-mid;
 }
 
 .main-heading-box {
@@ -46,8 +47,67 @@
   font-size: b.$font-size-p;
 }
 
-// If you've found your way here, it's clear that you share my love for coffee. I've always been a coffee enthusiast, and one day while surfing the web, I stumbled upon a fascinating website dedicated to the world of coffee. It got me thinking, "I drink so much coffee every day; I could definitely recall some remarkable tastes and experiences. Why not bring these coffee journeys to life through code?" And so, the idea for this website was born.
+@media (max-width: 1450px) {
+  .main-heading-box {
+    grid-template-columns: 1fr 1fr;
+    padding: b.$margin-mid-1 b.$margin-mid b.$margin-large b.$margin-mid;
 
-// Now, you might be wondering why I'm sharing this backstory with you. Well, it's simple. Here at Coffee-Driven-Coder, I want to take you on a flavorful journey through the best coffees I've ever tasted. I'll describe the coffee itself, the places I've enjoyed it, and pretty much everything that crosses my coffee-fueled mind. After all, you're visiting a site called Coffee-Driven-Coder – why not indulge in a little caffeine-infused storytelling?
+    & h3 {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+}
+@media (max-width: 1150px) {
+  .main-heading-box {
+    & h3 {
+      font-size: b.$font-size-mid;
+    }
 
-// So, whether you're a fellow coffee aficionado or just someone looking to explore the world of coffee, I invite you to join me on this delightful adventure. Get ready to savor the rich aromas, distinct flavors, and unique experiences that come with each cup. Sit back, relax, and enjoy your stay at Coffee-Driven-Coder!
+    & p {
+      font-size: b.$font-size-small-3;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .main-heading-box {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    padding: b.$margin-mid-1 b.$margin-mid b.$margin-large b.$margin-mid;
+    text-align: center;
+    & h3 {
+      margin-bottom: 0;
+    }
+  }
+}
+@media (max-width: 750px) {
+  .coffee-main {
+    column-gap: 1rem;
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .coffee-main {
+    column-gap: 0.5rem;
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 650px) {
+  .main-heading-box {
+    row-gap: 0.5rem;
+    padding: b.$margin-small-3 b.$margin-mid b.$margin-small-3 b.$margin-mid;
+    & h3 {
+      font-size: b.$font-size-smal-2;
+    }
+
+    & p {
+      font-size: b.$font-size-small-1;
+    }
+    & svg {
+      width: 1.4rem;
+    }
+  }
+}

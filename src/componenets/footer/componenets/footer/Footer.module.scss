@@ -34,6 +34,12 @@
   }
 }
 
+@media (max-width: 1400px) {
+  .container {
+    padding: 1rem b.$margin-mid;
+  }
+}
+
 @media (max-width: 1150px) {
   .main-link {
     font-size: b.$font-size-large;
@@ -57,7 +63,7 @@
 }
 @media (max-width: 500px) {
   .container {
-    padding: 1rem 1rem;
+    padding: 1rem b.$margin-mid;
     padding-bottom: 2rem;
   }
   .main-link {

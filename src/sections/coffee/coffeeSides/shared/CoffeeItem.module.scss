@@ -34,6 +34,43 @@
   }
 }
 
+@media (max-width: 1150px) {
+  .main-heading,
+  .main-heading:link,
+  .main-heading:visited {
+    & h3 {
+      font-size: b.$font-size-mid;
+    }
+  }
+  .coffe-item__text__date {
+    font-size: b.$font-size-small-3;
+  }
+
+  .coffe-item__text__title {
+    font-size: b.$font-size-small-3;
+  }
+}
+@media (max-width: 950px) {
+  .coffe-item {
+    padding: 0;
+  }
+}
+@media (max-width: 650px) {
+  .main-heading,
+  .main-heading:link,
+  .main-heading:visited {
+    & h3 {
+      font-size: b.$font-size-smal-2;
+    }
+  }
+  .coffe-item__text__date {
+    font-size: b.$font-size-small-1;
+  }
+
+  .coffe-item__text__title {
+    font-size: b.$font-size-small-1;
+  }
+}
 .fade-in {
   transform: translateY(0);
   opacity: 1;
