@@ -1,11 +1,9 @@
-import classes from "./articles.module.scss";
-
-const Articles = () => {
+const JavaScript = () => {
   return (
-    <div className={classes["articles"]}>
-      <h1>COMMING SOON!</h1>;
+    <div>
+      <p>Javascript</p>
     </div>
   );
 };
 
-export default Articles;
+export default JavaScript;

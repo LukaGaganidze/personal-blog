@@ -1,0 +1,64 @@
+@use "../../../../scss/abstracts" as a;
+@use "../../../../scss/base" as b;
+
+.artickles-sub-heading-light {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  & li {
+    list-style: none;
+
+    & a,
+    & a:link,
+    & a:visited {
+      font-size: b.$font-size-heading;
+      text-decoration: underline;
+      padding: 2rem 3rem;
+      display: block;
+    }
+
+    & a:hover,
+    & a:active {
+      background-color: a.$text-color !important;
+      color: a.$background-color !important;
+    }
+    &.active {
+      & a:link,
+      & a:visited {
+        background-color: a.$text-color !important;
+        color: a.$background-color !important;
+      }
+    }
+  }
+}
+.artickles-sub-heading-dark {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  & li {
+    list-style: none;
+
+    & a,
+    & a:link,
+    & a:visited {
+      font-size: b.$font-size-heading;
+      text-decoration: underline;
+      padding: 2rem 3rem;
+      display: block;
+    }
+    & a:hover,
+    & a:active {
+      background-color: a.$background-color !important;
+      color: a.$text-color !important;
+    }
+    &.active {
+      & a:link,
+      & a:visited {
+        background-color: a.$background-color !important;
+        color: a.$text-color !important;
+      }
+    }
+  }
+}
