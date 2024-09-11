@@ -1,8 +1,8 @@
-# Coffee Driven Coder - Personal Blog Project
+# Personal Blog Project
 
 ## Introduction
 
-Welcome to Coffee Driven Coder, my personal blog and website. This project is a reflection of my interests, experiences, and ongoing projects.
+Welcome to my personal blog and website. This project is a reflection of my interests, experiences, and ongoing projects.
 
 ## Purpose
 
@@ -26,4 +26,4 @@ Feel free to explore the website and engage with the content. Your feedback and 
 
 I welcome your feedback and suggestions. If you find something interesting or have ideas for improvement, please share them. I'd love to hear from you!
 
-Coffee Driven Coder
+
